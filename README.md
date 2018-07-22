@@ -1,1 +1,2 @@
-# news-scraper
+# Home Automation News
+

@@ -1,0 +1,10 @@
+.jumbotron {
+    background-image: url("../imgs/home.jpg");
+    color: white;
+    text-align: center;
+}
+
+.panel-heading {
+    font-weight: bold;
+}
+

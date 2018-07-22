@@ -1,0 +1,26 @@
+$(".click-me").click(function() {
+    alert("this works");
+    $("#notes").empty(); //empty notes
+    // var thisId = $(this).attr("data-id");
+
+    $.ajax({
+            method: "GET",
+            url: "/articles/"
+        })
+        .done(function(data) {
+            console.log(data);
+            $("#notes").append("<h2>" + data.headlines + "</h2>"); // The title of the article
+            $("#notes").append("<input id='titleinput' name='title' >"); // An input title
+            $("#notes").append("<textarea id='bodyinput' name='body'></textarea>"); //textarea
+            // A button to submit a new note, with the id of the article saved to it
+            $("#notes").append("<button data-id='" + data[i]._id + "' id='savenote'>Save Note</button>");
+
+            // If there's a note in the article
+            if (data.note) {
+                // Place the title of the note in the title input
+                $("#titleinput").val(data.note.title);
+                // Place the body of the note in the body textarea
+                $("#bodyinput").val(data.note.body);
+            }
+        });
+});
