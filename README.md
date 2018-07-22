@@ -6,7 +6,7 @@ Home Automation News Scaper is web application that scrapes news from Gizmodo's 
 * The add note button allows user to add notes on an article. All notes are saved to our mongodb database. 
 
 ## See it live here: https://dhrandy-scrape.herokuapp.com/
-
+ga
 This app was made using cheerio to serve  as the ORM to simplify the database interactions.
 
 ### Pre-requisites
