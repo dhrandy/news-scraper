@@ -43,4 +43,6 @@ The user will also be notified in the command line interface on which PORT its c
 
 `localhost:port/articles` will display all the scraped articles from https://gizmodo.com/tag/home-automation
 
+This app is a work in progress.
+
 
